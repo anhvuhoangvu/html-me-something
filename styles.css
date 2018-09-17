@@ -1,0 +1,110 @@
+@import url('more.css');
+body {
+	background-image: url(../images/header2a.jpg);
+	background-repeat:no-repeat;
+	background-positio
+	n:top;
+	background-color: #fff;
+	color: #666;
+	font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;	
+	margin: 20px 25px;
+}
+
+/* heading stuff */
+
+header {
+	margin-bottom: 50px;
+}
+
+h1 {
+	font-size: 24px;
+	line-height: 1;
+	font-weight: bold;
+	color: #222;
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: 300;
+	color: #777;
+}
+
+/* navigation */
+
+nav {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+nav ul {00
+	overflow: hidden;
+	padding-bottom: 25px;
+	border-bottom: 5px solid #bbb;
+}
+
+nav li {
+	float: left;
+	margin-right: 35px;
+}
+
+nav li a {
+	color: #666;
+	font-weight: bold;
+}
+
+nav li a:hover,
+nav li a:focus,
+nav li a.current {
+	color: #000;
+}
+
+nav #indicator {
+	position: absolute;
+	left: 15px;
+	bottom: 5px;
+	width: 12px;
+	height: 7px;
+	background-image: url('../images/notch.png');
+}
+
+nav #tabs {
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+/* content */
+
+#content article {
+	display: none;
+}
+
+#content p {
+	margin-bottom: 1em;
+	max-width: 50em;
+	line-height: 1.6;
+	color: #000;
+}
+/* footer */
+#foot	{
+	padding:50px 0 20px 0;
+	clear: both;
+}
+
+#foot ul	{
+	font-size: .92em;
+	margin: 0;
+	padding: 0;
+}
+
+#foot ul li	{
+	list-style: none;
+	display: inline;
+	color: #000;
+}
+
+#foot ul li.copyright {
+	display: block;
+	float: right;
+	width: 231px;
+	text-align: right;
+}
+
