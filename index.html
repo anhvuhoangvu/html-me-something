@@ -1,1 +1,104 @@
-<p>YOUR NAME</p>
+<!DOCTYPE html>
+<html>
+<head>
+<title>2018 in Asia</title>
+<link rel="stylesheet" type="text/css" href="/styles.css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+	
+		$(function() {
+			
+			var indicator = $('#indicator'),
+					indicatorHalfWidth = indicator.width()/2,
+					lis = $('#tabs').children('li');
+
+			$("#tabs").tabs("#content article", {
+				effect: 'fade',
+				fadeOutSpeed: 0,
+				fadeInSpeed: 400,
+				onBeforeClick: function(event, index) {
+					var li = lis.eq(index),
+					    newPos = li.position().left + (li.width()/2) - indicatorHalfWidth;
+					indicator.stop(true).animate({ left: newPos }, 600, 'easeInOutExpo');
+				}
+			});	
+
+		});
+
+	</script>
+	<header>
+		<hgroup>
+			<h1>2018 in Asia</h1>
+			<h2>A trip to remember</h2>
+		</hgroup>
+	</header>
+		<!--nav-->
+<nav>		
+  <ul id="tabs">
+			<li><a href="#">The Trip</a></li>
+			<li><a href="#">Departure</a></li>
+			<li><a href="#">Arrival</a></li>
+			<li><a href="#">Wedding</a></li>
+			<li><a href="#">South Korea</a></li>
+			<li><a href="#">Hanoi Nights</a></li>
+			<li><a href="#">Thailand</a></li>
+			<li><a href="#">Ha Long Goodbye</a></li>
+	</ul>
+	<span id="indicator"></span>
+</nav>	
+		<!--/nav-->
+   		<!--content-->
+<div id="content">	
+<main>
+<article>
+<p><img src="images/tripandmap.jpg" alt="Friends and Flight Map"></p>
+  <p id="tripstart">Nearing the end of 2017, me and a few friends decided we would visit parts of Asia in a month long trip. Along the way we saw and encountered a great number of unforgettable things, which certainly changed us for the better.</p>
+</article>
+<article>
+<p><img src="images/departure.jpg" alt="Images of Japan"></p>
+  <p>The trip began on a cold Monday morning in Saint Louis' Lambert Airport. Our first destination is to Chicago where we will then fly non-stop to Tokyo Narita airport. The arrival in Japan is certainly eye opening and the extensive use of the Japanese Yen (&yen;) is our first taste of international currency. Our final destination is Hanoi.</p>
+</article>
+<article>
+<p><img src="images/arrivalvietnam.jpg" alt="Arrival in Vietnam"></p>
+  <p>We arrive in Hanoi at late night. The airport is emptier than I had originally anticipated. A quick tip to the customs agents gets us through the checkpoint a bit faster than the stagnated line. Some relatives of mine await outside and drive us to our destination; the Vu ancestral home. The ride is a bit long, at around 4 hours, and the roads give us our first taste of the lawlessness of driving in Southeast Asia; I think I must have spotted maybe one or two stop signs and street lights per city.</p>
+</article>
+<article>
+<p><img src="images/wedding.jpg" alt="Wedding Images"></p>
+  <p>There was actually an going rumor that we'd be attending my own surprise wedding on this trip, luckily the rumors turned out to be false. The wedding was actually for a cousin and we had arrived on the night of the bachelor party. Most of the guests had already left by the time we arrived but we still had a few rounds of drinks with the groom. The wedding itself was a several day affair with a huge procession that went across cities. Me and the boys even got on stage a gave a terrible rendition of "A girl worth fighting for". </p>
+</article>
+<article>
+<p><img src="images/koreas.jpg" alt="Korean Pictures"></p>
+  <p>Several days later we had decided to take a week long trip to South Korea. We did this on a tour system and tickets from Vietnam to South Korea are actually super cheap; a tip for those wanting to travel to expensive countries, fly to a poorer country first and buy tickets there. The whole process is a small inconvenience for the money saved. In Korea, we met a few other awesome travellers and were able to take any many cool sights, including the world famous Seoul nightlife. One of my biggest takeways from this trip were the sheer amount of instagramers, that is people who spend hours getting the perfect instagram shots to make it look like their life is so much fun; it was heartening.</p>
+</article>
+<article>
+<p><img src="images/hanoinights.jpg" alt="Pictures around Hanoi"></p>
+  <p>After our week in Korea, we settled down for a few days in Hanoi. By this time, my two friends I had brought along had gotten themselves girlfriends, while I experienced an interesting course of events that could be described as an asian rom-com drama, but that's a story for another time. We decided that we would go to Thailand next and spent some nights meeting up with people in Hanoi.</p>
+</article>
+<article>
+<p><img src="images/thailand.jpg" alt="Thailand"></p>
+  <p>The trip to Thailand differed much to the Korean trip. Instead of just me and the boys, they brought their new girlfriends along and I was the single guy out. The whole situation wasn't ideal, but I was happy they were enjoying the trip. The thing about the weather in Thailand is that it sucks, humid and hot. They had an interesting approach to sexuality and the way it is dealth with seemed so much more mature than back in the States. We tried the whole gammut from temples to transvestite shows. I had gotten sick sometime during the trip and that didn't seem to make things any better for me.</p>
+</article>
+<article>
+<p><img src="images/halong.jpg" alt="Farewell Pictures"></p>
+  <p>We spent our last week in Ha Long. I didn't get to see the boys much during this phase as they slept over their girlfriend's houses and we kinda just went to do our thing. Originally we had wanted to explore the country, ala backpacking style, but that plan didn't turn out so well. After the week, we bid our new friends and family members goodbye for now, with plans for bi-yearly trips back. Overall it was certainly a month to remember and life changing for us all.</p>
+</article>
+
+</main>
+</div>
+
+</body>
+<div id="foot">
+<footer>
+	<ul>
+	<li class="copyright">&copy; 2018 Anh Vu</li>	
+	<li><p>Posted by: Anh Vu</p></li>	
+	<li>Contact information:<a href="mailto:anhvuhoangvu@gmail.com">
+  anhvuhoangvu@gmail.com</a>.</li>
+	</ul>
+</footer>
+</div>
+</html>
